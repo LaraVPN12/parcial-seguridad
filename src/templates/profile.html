@@ -1,0 +1,24 @@
+{% extends './layout.html' %}
+
+{% block title %}Inicio de Sesion{% endblock %}
+
+{% block body%}
+    <div class="flex flex-col justify-center items-center">
+        <div class="w-96 bg-white/30 rounded-3xl mt-10 text-center p-10 mb-10">
+            <i class="bi bi-person-circle text-[100px] text-white"></i>
+            <div class="text-3xl text-[#261f49] font-bold">
+                {% if current_user %}
+                    {{ current_user.nombre }} {{ current_user.apellido }}
+                {% endif %}
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="text-lg text-[#261f49] font-bold mr-1">Edad:</div>
+                <div class="text-lg text-white">{{ current_user.edad }}</div>
+            </div>
+            <div class="text-lg text-[#261f49] font-bold">Descripción:</div>
+            <div class="text-lg text-white">{{ current_user.descripcion }}</div>
+        </div>
+        <a class="px-10 py-2 bg-[#261f49] font-bold text-white rounded-xl" href="{{ url_for('logout') }}">Cerrar Sesion</a>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,45 @@
+{
+"users" : [
+    {
+        "nombre_usuario" : "kevin",
+        "password_usuario" : "hola123"
+    },
+    {
+        "nombre_usuario" : "john",
+        "password_usuario" : "cookie"
+    },
+    {
+        "nombre_usuario" : "jeff",
+        "password_usuario" : "catlover"
+    },
+    {
+        "nombre_usuario" : "reynaldo",
+        "password_usuario" : "karolg1234"
+    },
+    {
+        "nombre_usuario" : "max",
+        "password_usuario" : "R45Gyin76RZ4Z@D"
+    },
+    {
+        "nombre_usuario" : "eli",
+        "password_usuario" : "hD960"
+    },
+    {
+        "nombre_usuario" : "lemus",
+        "password_usuario" : "6#7YSiYlP3"
+    },
+    {
+        "nombre_usuario" : "posada",
+        "password_usuario" : "5FJCND43*c"
+    },
+    {
+        "nombre_usuario" : "rene",
+        "password_usuario" : "4bR"
+    },
+    {
+        "nombre_usuario" : "miguel",
+        "password_usuario" : "&01V"
+    }
+    
+]
+}
