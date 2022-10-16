@@ -1,2 +1,2 @@
-gmail_user = 'kjlmenjivar@gmail.com'
-gmail_password = 'xpltoqwfxtsttqcs'
+gmail_user = 'email'
+gmail_password = 'password'

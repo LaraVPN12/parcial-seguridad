@@ -18,10 +18,10 @@ app = Flask(__name__)
 # DB Connection:
 try:
     connection = psycopg2.connect(
-        host = 'localhost',
-        user = 'postgres',
-        password = 'KevinLara',
-        database = 'parcial'
+        host = 'host',
+        user = 'user',
+        password = 'password',
+        database = 'database'
 
     )
 except Exception as ex:
@@ -52,8 +52,10 @@ def login():
         else:
             flash('Usuario Incorrecto')
             return render_template('auth/login.html')
+            
+    # Redirección a Perfil con OAUTH
     if request.method == 'GET':
-        user = User(0, 'kjlmenjivar@gmail.com', 'hola123')
+        user = User(0, 'username', 'password')
         logged_user = ModelUser.login(connection, user)
         if logged_user != None:
             if logged_user.password:
@@ -90,7 +92,7 @@ def validation_code():
         code = Code(request.form['code'])
         checked_code = ModelCode.checkCode(connection, code)
         if checked_code != None:
-            user = User(0, 'reynaldo', 'karolg1234')
+            user = User(0, 'username', 'password')
             logged_user = ModelUser.login(connection, user)
             if logged_user != None:
                 if logged_user.password:
